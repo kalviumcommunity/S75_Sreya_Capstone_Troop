@@ -1,1 +1,24 @@
 @import "tailwindcss";
+
+/* Troop themed scrollbar for all pages */
+body, html, * {
+  scrollbar-width: thin;
+  scrollbar-color: #FFA541 #232222;
+}
+
+/* Chrome, Edge, Safari */
+body::-webkit-scrollbar, html::-webkit-scrollbar, *::-webkit-scrollbar {
+  width: 10px;
+  background: #232222;
+}
+
+body::-webkit-scrollbar-thumb, html::-webkit-scrollbar-thumb, *::-webkit-scrollbar-thumb {
+  background: #FFA541;
+  border-radius: 8px;
+  border: 2px solid #232222;
+}
+
+body::-webkit-scrollbar-track, html::-webkit-scrollbar-track, *::-webkit-scrollbar-track {
+  background: #232222;
+  border-radius: 8px;
+}
